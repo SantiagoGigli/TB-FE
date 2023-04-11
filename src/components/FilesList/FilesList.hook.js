@@ -8,7 +8,7 @@ export const useFetchFilesList = () => {
   const { data, isLoading, error } = useFilesListSelector();
   useEffect(() => {
     dispatch(fetchFilesList());
-  }, []);
+  }, [dispatch]);
 
   return {
     data,
